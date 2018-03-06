@@ -1,0 +1,33 @@
+MELHORIAS - TRAZER PARA O MUNDO REAL
+
+- tratar exceções
+- realizar validações
+- fazer estoque(no qual os itens serão decrementados) informar se o produto está disponivel ou nao
+
+
+- reestruturar boleto e carta (solicitar numero e parcelas nao tem relação com nota fiscal) e se eu nao quiser gerar nota fiscal?
+gerar nota fiscal é necessario (obrigatorio)
+- nota fiscal de credito e debito é o mesmo, porém sem o numero de parcelas
+- refatorar os pacotes
+- chamar de BOLETO/FATURA/COMPROVANTE (Nota Fiscal)
+- toda forma de pagamento gera uma nota fiscal
+
+NOTA FISCAL é emitida quando paga o boleto, é emitida quando paga a fatura, é emitida quando paga a debito
+- questionar se deseja nota fiscal
+NOTA FISCAL só é gerada após efetuar o pagamento
+
+pagamento(order)
+nota fiscal extends pagamento
+
+nota fiscal recebe a opção de pagamento informada no inicio e gera nota fiscal de acordo com o tipo
+
+strategy de gerar nota fiscal (Boleto, Fatura, Comprovante)
+
+REVEJA O RELACIONAMENTO ENTRE OS OBJETOS. FAZ SENTIDO UM ESTAR FALANDO COM O OUTRO7
+
+
+FEITO
+- apresentar itens antes
+- questionar se deseja add itens no carrinho
+- questionar se deseja continuar comprando ou finalizar compra
+- selecionar forma de pagamento (10% desconto no boleto)
